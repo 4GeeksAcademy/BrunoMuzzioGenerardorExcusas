@@ -39,9 +39,9 @@ divTitulo.className = "col-8 p-3 text-center fw-bold text-decoration-underline d
 divSeleccionArea.className = "row w-100 justify-content-center "
 colSalon.className = "col-6 d-flex justify-content-center p-5"
 colCocina.className = "col-6 d-flex justify-content-center p-5"
-imgSalon.className = "img-fluid imagen-boton m-3 border rounded shadow"; 
+imgSalon.className = "img-fluid imagen-boton m-3 border rounded shadow boton"; 
 imgSalon.style.maxWidth = "75%";
-imgCocina.className = "img-fluid imagen-boton m-3 border rounded shadow"; 
+imgCocina.className = "img-fluid imagen-boton m-3 border rounded shadow boton"; 
 imgCocina.style.maxWidth = "75%";
 
 // Excusas de cada parte
@@ -86,12 +86,12 @@ function mostrarEscenasSalon() {
   mainContendor.appendChild(divExcusa)
 
   const botonRestart = document.createElement("button")
-  botonRestart.innerText = "Reiniciar"
+  botonRestart.innerText = "Nueva Excusa"
   botonRestart.onclick = () => location.reload();
   mainContendor.appendChild(botonRestart);
 
-  divPregunta.className = "col-8 p-5 text-center m-3 bg-danger text-light display-5"
-  divExcusa.className = "col-8 p-5 text-center m-3 display-5 titulo"
+  divPregunta.className = "col-8 p-5 text-center m-3 texto display-5 fadeInAnimation"
+  divExcusa.className = "col-8 p-5 text-center m-3 display-5 texto fadeInAnimation"
   botonRestart.className = "btn btn-outline-secondary m-1";
 }
 
@@ -132,12 +132,12 @@ function mostrarEscenasCocina() {
   mainContendor.appendChild(divExcusa)
 
   const botonRestart = document.createElement("button")
-  botonRestart.innerText = "Reiniciar"
+  botonRestart.innerText = "Nueva Excusa"
   botonRestart.onclick = () => location.reload();
   mainContendor.appendChild(botonRestart);
 
-  divPregunta.className = "col-8 p-5 text-center m-3 bg-danger text-light display-5"
-  divExcusa.className = "col-8 p-5 text-center m-3 display-5 titulo"
+  divPregunta.className = "col-8 p-5 text-center m-3 texto display-5 fadeInAnimation"
+  divExcusa.className = "col-8 p-5 text-center m-3 display-5 texto fadeInAnimation"
   botonRestart.className = "btn btn-outline-secondary m-1";
 }
 

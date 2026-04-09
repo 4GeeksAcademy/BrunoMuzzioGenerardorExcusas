@@ -7,9 +7,46 @@ body{
 }
 
 .titulo {
-    background-color: #F5E6D3;
+    background-color: white;
+    color: #5d4037;    
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.2);
 }
 
+.texto{
+    background:white;
+    color: #5d4037; 
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.2);
+}
 
+/* Animacion botones */
 
+.boton{
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out, opacity 0.2s ease-in-out;
+    display: inline-block;
+}
 
+.boton:hover{
+    transform: scale(1.05);
+    opacity: 0.9;
+}
+
+.boton:active{
+    transform: scale(0.95);
+}
+
+/* Transicion Excusas*/
+
+@keyframes aparecer {
+    from {
+        opacity: 0;
+        transform: translateY(20px); 
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.fadeInAnimation{
+    animation: aparecer 0.8s ease-out forwards;
+}
